@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>文件分享 · CFB2 网盘</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/share.js"></script>
+</head>
+<body class="share-screen">
+  <main class="share-wrap">
+    <div class="brand"><span class="mark" aria-hidden="true"></span>CFB2 <b>网盘</b></div>
+    <section class="share-card" aria-labelledby="share-title">
+      <span class="empty-icon"><span class="icon file" aria-hidden="true"></span></span>
+      <h1 id="share-title">文件分享</h1>
+      <p id="share-meta" class="muted" aria-live="polite">正在读取分享…</p>
+      <form id="unlock-form" class="unlock" hidden>
+        <label for="password">访问密码</label>
+        <input id="password" type="password" maxlength="128" autocomplete="current-password" required>
+        <button class="button primary" type="submit">解锁文件</button>
+      </form>
+      <a id="download" class="button primary" hidden>下载文件</a>
+      <p id="share-error" class="notice error" role="alert" hidden></p>
+    </section>
+  </main>
+</body>
+</html>

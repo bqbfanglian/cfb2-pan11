@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>管理登录 · CFB2 网盘</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/login.js"></script>
+</head>
+<body class="share-screen">
+  <main class="share-wrap">
+    <div class="brand"><span class="mark" aria-hidden="true"></span>CFB2 <b>网盘</b></div>
+    <section class="share-card" aria-labelledby="login-title">
+      <h1 id="login-title">管理登录</h1>
+      <p class="muted">下载资源请打开你收到的分享链接。</p>
+      <form id="login-form" class="unlock" method="post" action="/api/admin/login">
+        <label for="password">管理员密码</label>
+        <input id="password" type="password" autocomplete="current-password" maxlength="128" required>
+        <button class="button primary" type="submit">登录</button>
+      </form>
+      <p id="login-demo" class="muted" hidden>本地演示密码 <code>cfb2-demo-password</code></p>
+      <p id="login-error" class="notice error" role="alert" hidden></p>
+    </section>
+  </main>
+</body>
+</html>
